@@ -25,6 +25,22 @@
   </div>
 </div>
 
+
+
+<!-- owl-carousel -->
+<owl-carousel-o [options]="customOptions">
+  <ng-template carouselSlide *ngFor="let img of imagesList">
+      <div class="slide">
+          <img src="{{img}}">
+      </div>
+  </ng-template>
+
+</owl-carousel-o>
+
+<!-- end_owl-carousel -->
+
+
+
 <div class="hot-products wow animate__animated animate__fadeInRight " data-wow-duration="2s" data-wow-delay=".5s">
   <div class="container">
       <h2>Sản phẩm bán chạy</h2>
