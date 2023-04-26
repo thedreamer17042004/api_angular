@@ -31,12 +31,12 @@
                     </div>
                     <div class="col-lg-3 col-md-3 ">
                         <div class="login-love-bag">
-                            <span class="login"><a href="login.html" style="color: #fff;font-weight: 700;">Đăng nhập</a></span>
+                            <span class="login"><a [routerLink]="['components/login']" routerLinkActive="router-link-active"  style="color: #fff;font-weight: 700;">Đăng nhập</a></span>
                             <span class="heart">
                                 <i class="fa-solid fa-heart icon-heart"></i>
                             </span>
                             <span class="shopping-bag">
-                                <a href="cart-shop.html" style="color: #fff;"><i class="fa-sharp fa-regular fa-bag-shopping"></i></a>
+                                <a [routerLink]="['components/cart-shop']" routerLinkActive="router-link-active" style="color: #fff;"><i class="fa-sharp fa-regular fa-bag-shopping"></i></a>
 
                             </span>
                         </div>
@@ -54,22 +54,22 @@
                <div class="collapse navbar-collapse wrapp-ul" id="collapsibleNavId">
                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul-menu">
                        <li class="nav-item active li-menu">
-                           <a class="nav-link a-menu" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                           <a class="nav-link a-menu" [routerLink]="['']" routerLinkActive="router-link-active">Trang chủ <span class="sr-only">(current)</span></a>
                        </li>
                        <li class="nav-item li-menu">
-                           <a class="nav-link a-menu" href="about.html">Giới thiệu</a>
+                           <a class="nav-link a-menu" [routerLink]="['components/about']" routerLinkActive="router-link-active">Giới thiệu</a>
                        </li>
                        <li class="nav-item li-menu">
-                           <a class="nav-link a-menu" href="product.html">Đồng hồ nam</a>
+                           <a class="nav-link a-menu" [routerLink]="['components/product']" routerLinkActive="router-link-active">Đồng hồ nam</a>
                        </li>
                        <li class="nav-item li-menu">
-                           <a class="nav-link a-menu" href="product.html">Đồng hồ nữ</a>
+                           <a class="nav-link a-menu" [routerLink]="['components/product']" routerLinkActive="router-link-active">Đồng hồ nữ</a>
                        </li>
                        <li class="nav-item li-menu">
-                           <a class="nav-link a-menu" href="blogs.html">Blogs</a>
+                           <a class="nav-link a-menu" [routerLink]="['blog']" routerLinkActive="router-link-active">Blogs</a>
                        </li>
                        <li class="nav-item li-menu">
-                           <a class="nav-link a-menu" href="contact.html">Liên hệ</a>
+                           <a class="nav-link a-menu" [routerLink]="['components/contact']" routerLinkActive="router-link-active">Liên hệ</a>
                        </li>
                    </ul>
                </div>
@@ -263,3 +263,5 @@
       </div>
   </div>
 </div>
+
+

@@ -18,5 +18,54 @@
 </head>
 <body>
   <app-root></app-root>
+
+
+  <!-- chú ý mai sửa lại do chưa có owl-carousel -->
+  <script src="plugin/jquery.min.js"></script>
+    <!-- <script src="plugin/bootstrap.min.js"></script> -->
+    <script src="https://cdn.usebootstrap.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="plugin/owlcarousel/owl.carousel.min.js"></script>
+    <script src="plugin/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="plugin/wow.min.js"></script>
+    <script>
+
+        // carowsel
+        $('.my-hot-product').owlCarousel({
+            loop:true,
+            margin:10,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        });
+        $('.produc-one').owlCarousel({
+            margin:10,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+
+        })
+
+
+        // woww
+        new WOW().init();
+
+    </script>
 </body>
 </html>
