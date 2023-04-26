@@ -86,31 +86,10 @@
               <li data-target="#carouselId" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                  <img src="./assets/images/slide-bg-1.jpg" alt="First slide" class="w-100">
+              <div class="carousel-item" [ngClass] ="key
+               == 0 ? 'active' : ' '" *ngFor="let b of banners; let key = index">
+                  <img src="{{b}}" alt="First slide" class="w-100">
                   <div class="carousel-caption  d-md-block caption-banner  animate__animated animate__fadeInRight" >
-                      <h4>Mona Watch</h4>
-                      <h1>Đồng hồ Classico</h1>
-                      <p>Cùng với sự phát triển không ngừng của thời trang thế giới, rất nhiều thương hiệu cho ra đời những mẫu đồng hồ nam chính hãng đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ…</p>
-                      <a href="#">
-                          <span>Xem sản phẩm</span>
-                      </a>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <img src="./assets/images/slide-bg-2.jpg" alt="Second slide" class="w-100">
-                  <div class="carousel-caption  d-md-block caption-banner  animate__animated animate__fadeInRight " >
-                      <h4>Mona Watch</h4>
-                      <h1>Đồng hồ Classico</h1>
-                      <p>Cùng với sự phát triển không ngừng của thời trang thế giới, rất nhiều thương hiệu cho ra đời những mẫu đồng hồ nam chính hãng đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ…</p>
-                      <a href="#">
-                          <span>Xem sản phẩm</span>
-                      </a>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <img src="./assets/images/slide-bg-1.jpg" alt="Third slide" class="w-100">
-                  <div class="carousel-caption  d-md-block caption-banner  animate__animated animate__fadeInRight " >
                       <h4>Mona Watch</h4>
                       <h1>Đồng hồ Classico</h1>
                       <p>Cùng với sự phát triển không ngừng của thời trang thế giới, rất nhiều thương hiệu cho ra đời những mẫu đồng hồ nam chính hãng đa dạng về phong cách, kiểu dáng, màu sắc, kích cỡ…</p>
